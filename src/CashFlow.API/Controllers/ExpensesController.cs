@@ -1,4 +1,5 @@
-﻿using CashFlow.Application.UseCases.Expenses.Register;
+﻿using CashFlow.API.Filters;
+using CashFlow.Application.UseCases.Expenses.Register;
 using CashFlow.Communication.Requests;
 using CashFlow.Communication.Responses;
 using CashFlow.Exceptions.ExceptionsBase;
@@ -15,23 +16,9 @@ namespace CashFlow.API.Controllers
         [ProducesResponseType(typeof(ResponseRegisterExpanseJson), StatusCodes.Status201Created)]
         public IActionResult Register([FromBody]RequestExpenseJson request)
         {
-            try
-            {
                 var response = new RegisterExpensesUseCase().Execute(request);
+            
                 return Created(string.Empty, response);
-            }
-            catch (ErrorOnValidateException e)
-            {
-                ResponseErrorJson error = new(e.Errors);
-        
-                return BadRequest(error);
-            }
-            catch (Exception)
-            {
-                ResponseErrorJson error = new("Erro desconhecido.");
-                
-                return BadRequest(error);
-            }
         }
     }
 }
