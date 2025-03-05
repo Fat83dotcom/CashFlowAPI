@@ -225,3 +225,5 @@ project.lock.json
 #####
 *.Png
 .editorconfig
+
+*.deb

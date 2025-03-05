@@ -18,7 +18,7 @@ if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 }
 
-app.UseMiddleware<CultureMiddleWare>();
+// app.UseMiddleware<CultureMiddleWare>();
 
 app.UseSwagger();
 
