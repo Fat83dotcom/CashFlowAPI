@@ -5,8 +5,6 @@ VisualStudioVersion = 17.12.35728.132
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D5968CD1-0A73-4FAD-8471-50D9EB4C32AE}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F9E0DDD7-627B-431F-A4AC-58DD20BAD5A5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.API", "src\CashFlow.API\CashFlow.API.csproj", "{0130EE10-23A8-4A15-9ADA-41A95DAA63B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Domain", "src\CashFlow.Domain\CashFlow.Domain.csproj", "{7E1FF39A-12B0-4004-ADF2-1623D15C2BFE}"
@@ -22,6 +20,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Infraestructure", 
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CashFlow.Exceptions", "src\CashFlow.Exceptions\CashFlow.Exceptions.csproj", "{5D4BD46F-81D5-4755-9C37-EAA5AF952291}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValidatorsTests", "test\ValidatorsTests\ValidatorsTests.csproj", "{02401557-C0FF-4E01-AB35-E1580FC8500D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +55,10 @@ Global
 		{5D4BD46F-81D5-4755-9C37-EAA5AF952291}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5D4BD46F-81D5-4755-9C37-EAA5AF952291}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5D4BD46F-81D5-4755-9C37-EAA5AF952291}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02401557-C0FF-4E01-AB35-E1580FC8500D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02401557-C0FF-4E01-AB35-E1580FC8500D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02401557-C0FF-4E01-AB35-E1580FC8500D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02401557-C0FF-4E01-AB35-E1580FC8500D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,5 +70,9 @@ Global
 		{5984D456-7F7A-4CDE-82D4-5FA18E568648} = {D5968CD1-0A73-4FAD-8471-50D9EB4C32AE}
 		{82D64166-366F-4AD5-A8C7-C6E52376B020} = {D5968CD1-0A73-4FAD-8471-50D9EB4C32AE}
 		{5D4BD46F-81D5-4755-9C37-EAA5AF952291} = {D5968CD1-0A73-4FAD-8471-50D9EB4C32AE}
+		{02401557-C0FF-4E01-AB35-E1580FC8500D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D61724A-322D-4C15-94EC-6F3BDD54C043}
 	EndGlobalSection
 EndGlobal
