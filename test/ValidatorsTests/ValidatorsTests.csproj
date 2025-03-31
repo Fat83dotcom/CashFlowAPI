@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\CashFlow.Application\CashFlow.Application.csproj" />
+    <ProjectReference Include="..\CommonTestsUtilities\CommonTestsUtilities.csproj" />
   </ItemGroup>
 
   <ItemGroup>
