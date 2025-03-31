@@ -2,6 +2,7 @@
 using CashFlow.Communication.Requests;
 using CashFlow.Communication.Enums;
 using CommonTestsUtilities;
+using FluentAssertions;
 
 namespace ValidatorsTests.Expenses.Register
 {
@@ -22,7 +23,7 @@ namespace ValidatorsTests.Expenses.Register
 
             //Assert
 
-            Assert.True(result.IsValid);
+            result.IsValid.Should().BeTrue();
         }
     }
 }
