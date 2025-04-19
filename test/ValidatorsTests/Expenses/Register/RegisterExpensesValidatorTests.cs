@@ -24,14 +24,17 @@ namespace ValidatorsTests.Expenses.Register
             result.IsValid.Should().BeTrue();
         }
 
-        [Fact]
-        public void ErrorTitleEmpty()
+        [Theory]
+        [InlineData("")]
+        [InlineData("             ")]
+        [InlineData(null)]
+        public void ErrorTitleEmpty(string? title)
         {
             //Arrange
             RequestRegisterExpenseBuilder requestBuilder = new();
             var request = requestBuilder.Build();
             RegisterExpenseValidator validator = new(request);
-            request.Title = string.Empty;
+            request.Title = title;
 
             //Act
             var result = validator.Validate(request);
