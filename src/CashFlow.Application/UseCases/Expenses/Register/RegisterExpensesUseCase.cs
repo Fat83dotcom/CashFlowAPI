@@ -8,9 +8,16 @@ namespace CashFlow.Application.UseCases.Expenses.Register
 {
     public class RegisterExpensesUseCase
     {
+        RegisterExpensesUseCase()
+        {
+
+        }
         public ResponseRegisterExpanseJson Execute(RequestExpenseJson request)
         {
             Validate(request);
+
+
+
             return new ResponseRegisterExpanseJson()
             {
                 Title = request.Title
