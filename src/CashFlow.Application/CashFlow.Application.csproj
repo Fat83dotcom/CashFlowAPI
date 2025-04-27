@@ -7,7 +7,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="UseCases\DTOs\**" />
+    <Compile Remove="UseCases\Expenses\Register\NewFolder1\**" />
+    <Compile Remove="UseCases\Expenses\Register\NewFolder\**" />
+    <EmbeddedResource Remove="UseCases\DTOs\**" />
+    <EmbeddedResource Remove="UseCases\Expenses\Register\NewFolder1\**" />
+    <EmbeddedResource Remove="UseCases\Expenses\Register\NewFolder\**" />
+    <None Remove="UseCases\DTOs\**" />
+    <None Remove="UseCases\Expenses\Register\NewFolder1\**" />
+    <None Remove="UseCases\Expenses\Register\NewFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="UseCases\Expenses\Register\Interfaces\Interface1.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="FluentValidation" Version="11.11.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="9.0.4" />
   </ItemGroup>
 
   <ItemGroup>
