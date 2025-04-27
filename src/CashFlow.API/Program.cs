@@ -1,6 +1,7 @@
 using CashFlow.API.Filters;
 using CashFlow.API.MiddleWare;
 using CashFlow.Infraestructure;
+using CashFlow.Application;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,9 +13,10 @@ builder.Services.AddOpenApi();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddMvc(o => o.Filters.Add<ExceptionFilter>());
- 
-builder.Services.AddInfrastructure(); // Extensão para a injeção de dependencia "DependencyInjectionExtension"
- 
+
+builder.Services.AddInfrastructure(builder.Configuration);
+
+builder.Services.AddApplication();
 
 var app = builder.Build();
 
