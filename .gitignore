@@ -227,3 +227,4 @@ project.lock.json
 .editorconfig
 
 *.deb
+src/CashFlow.Domain/Repositories/Expenses/Interface1.cs
